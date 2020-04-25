@@ -1,12 +1,12 @@
 require('dotenv').config()
 const express = require('express')
-const app = express()
+const server = express()
 const port = process.env.PORT || 8000
-const dataTonic = require('./dataTonic.json')
-require('./src/middleware')(app)
+const dataTonic = require('./dataTonic')
+require('./src/middleware')(server)
 
-app.get('/', (req, res) => res.json(dataTonic))
+server.get('/', (req, res) => res.json(dataTonic))
 
-app.listen(port, () =>
+server.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 )
