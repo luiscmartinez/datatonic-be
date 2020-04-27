@@ -15,23 +15,23 @@ module.exports =  {
   },
   notifications: [
     {
-      title: 'Security Threat',
+      title: 'Excessive User Rights',
       created_at: '3 hours ago',
       type: 1,
       info:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'HDFS file account_acesss.avro containing SSNs grants read rights to Everyone',
       unread: true,
     },
     {
-      title: 'New Sensitive Data',
+      title: 'New Sensitive Data Location',
       created_at: '3 hours ago',
       type: 2,
       info:
-        'Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut',
+        'costomer_ab_test Hive table containing credit card data created yesterday',
       unread: true,
     },
     {
-      title: 'New Sensitive Data',
+      title: 'New Sensitive Data Location',
       created_at: '3 hours ago',
       type: 3,
       info:
