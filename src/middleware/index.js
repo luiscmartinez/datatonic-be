@@ -4,7 +4,8 @@ const cors = require('cors')
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://datatonic.luismartinez.dev'
+    'https://datatonic.luismartinez.dev',
+    'https://datatonic.netlify.app/dashboard'
   ],
 }
 module.exports = (app) => {
